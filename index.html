@@ -43,15 +43,6 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Eventos</a></li>
           </ul>
-          <form class="d-flex gap-2" role="search">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Buscar un pokemón"
-              aria-label="Buscar un pokemón"
-            />
-            <button class="btn btn-outline-light" type="submit">Buscar</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -71,37 +62,10 @@
     </header>
 
     <main class="container my-4 my-md-5">
-      <!-- Controles -->
-      <div class="row g-3 align-items-center mb-4">
-        <div class="col-12 col-md">
-          <button
-            id="btn-sorprendeme"
-            class="btn btn-info w-100 text-white"
-            type="button"
-          >
-            <i class="bi bi-arrow-repeat"></i> ¡Sorpréndeme!
-          </button>
-        </div>
-        <div
-          class="col-12 col-md-auto d-flex align-items-center gap-2 justify-content-md-end"
-        >
-          <label for="orden" class="mb-0">Ordenar por</label>
-          <select id="orden" class="form-select w-auto">
-            <option selected>Número inferior</option>
-            <option>Número superior</option>
-            <option>A-Z</option>
-            <option>Z-A</option>
-          </select>
-        </div>
-      </div>
-
-      <!-- Grilla -->
       <section aria-label="Listado de Pokémon">
-        <div
-          class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4"
-        >
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-3 g-md-4">
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
@@ -120,7 +84,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
@@ -139,7 +103,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
@@ -158,7 +122,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
@@ -176,7 +140,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
@@ -194,7 +158,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
@@ -213,7 +177,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
@@ -231,7 +195,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
@@ -249,7 +213,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
@@ -267,7 +231,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png"
@@ -285,7 +249,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
@@ -303,7 +267,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="pk-card h-100 position-relative">
+            <article class="pk-card position-relative">
               <div class="pk-img">
                 <img
                   src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png"
@@ -323,12 +287,6 @@
           </div>
         </div>
       </section>
-
-      <div class="text-center mt-5">
-        <button class="btn btn-danger px-4" type="button">
-          Cargar más Pokémon
-        </button>
-      </div>
     </main>
 
     <footer class="footer-pk">
@@ -379,5 +337,6 @@
         btnArriba.classList.toggle("visible", window.scrollY > 300);
       });
     </script>
+
   </body>
 </html>
